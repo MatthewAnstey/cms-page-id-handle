@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config> 
+    <modules>
+        <MatthewAnstey_CmsPageids>
+            <!-- The version of our module, starting at 0.0.1 -->
+            <version>0.0.1</version>
+        </MatthewAnstey_CmsPageIsd>
+
+    </modules>
+    <global>
+        <events>
+            <cms_page_render>
+                <observers>
+                    <matthewanstey_cmspageids>
+                        <class>MatthewAnstey_CmsPageIds_Model_Observer</class>
+                        <method>setId</method>
+                    </matthewanstey_cmspageids>
+                </observers>
+            </cms_page_render>
+        </events>
+    </global> 
+</config>
