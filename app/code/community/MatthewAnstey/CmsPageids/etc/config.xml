@@ -12,7 +12,7 @@
             <cms_page_render>
                 <observers>
                     <matthewanstey_cmspageids>
-                        <class>MatthewAnstey_CmsPageIds_Model_Observer</class>
+                        <class>MatthewAnstey_CmsPageids_Model_Observer</class>
                         <method>setId</method>
                     </matthewanstey_cmspageids>
                 </observers>
