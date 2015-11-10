@@ -8,5 +8,5 @@ class MatthewAnstey_CmsPageids_Model_Observer
       $action = $observer->getEvent()->getController_action();
       $action->getLayout()->getUpdate()
             ->addHandle('cms_page_' . $pageId);
-      }  
+      } 
 }

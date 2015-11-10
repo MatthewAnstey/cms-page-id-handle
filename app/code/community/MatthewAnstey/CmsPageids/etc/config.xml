@@ -2,12 +2,15 @@
 <config> 
     <modules>
         <MatthewAnstey_CmsPageids>
-            <!-- The version of our module, starting at 0.0.1 -->
-            <version>0.0.1</version>
+            <version>0.1.0</version>
         </MatthewAnstey_CmsPageids>
-
     </modules>
     <global>
+        <models>
+            <matthewanstey_cmspageids>
+                <class>MatthewAnstey_CmsPageids_Model</class>
+            </matthewanstey_cmspageids>
+        </models>
         <events>
             <cms_page_render>
                 <observers>
@@ -18,5 +21,26 @@
                 </observers>
             </cms_page_render>
         </events>
+        <resources>
+            <matthewanstey_cms_setup>
+                <setup>
+                    <module>MatthewAnstey_CmsPageids</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </matthewanstey_cms_setup>
+            <matthewanstey_cmspageids_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </matthewanstey_cmspageids_write>
+            <matthewanstey_cmspageids_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </matthewanstey_cmspageids_read>
+        </resources>
     </global> 
 </config>
