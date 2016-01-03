@@ -18,11 +18,19 @@
                         <class>MatthewAnstey_CmsPageids_Model_Observer</class>
                         <method>setId</method>
                     </matthewanstey_cmspageids>
-                </observers>
+                </observers>            
             </cms_page_render>
+            <adminhtml_cms_page_edit_tab_content_prepare_form>
+                <observers>
+                    <matthewanstey_cmspageids_edit_tab_content>
+                        <class>MatthewAnstey_CmsPageids_Model_Observer</class>
+                        <method>cmsField</method>
+                    </matthewanstey_cmspageids_edit_tab_content>
+                </observers>
+            </adminhtml_cms_page_edit_tab_content_prepare_form>
         </events>
         <resources>
-            <matthewanstey_cms_setup>
+            <matthewanstey_cmspageids_setup>
                 <setup>
                     <module>MatthewAnstey_CmsPageids</module>
                     <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
@@ -30,7 +38,7 @@
                 <connection>
                     <use>core_setup</use>
                 </connection>
-            </matthewanstey_cms_setup>
+            </matthewanstey_cmspageids_setup>
             <matthewanstey_cmspageids_write>
                 <connection>
                     <use>core_write</use>
